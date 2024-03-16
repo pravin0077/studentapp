@@ -1,4 +1,3 @@
-/opt/apache-maven-3.6.3
 pipeline {
     agent any
 
