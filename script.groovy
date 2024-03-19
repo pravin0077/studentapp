@@ -24,8 +24,8 @@ stage('testing') {
         }
 stage('Deployment') {
             steps {
-                git 'https://github.com/chetansomkuwar254/studentapp.ui.git'
-                echo 'Hello World'
+                deploy adapters: [tomcat8(url: 'http://13.201.89.207:8080/' , credentialsId: 'Tomcat_credentials')], contextPath: '/', war: '**/*.war'
+                echo 'Deployment Done successfully'
             }
         }
     }
