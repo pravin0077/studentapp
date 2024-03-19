@@ -24,7 +24,7 @@ stage('testing') {
         }
 stage('Deployment') {
             steps {
-                deploy adapters: [tomcat8(url: 'http://13.201.89.207:8080/' , credentialsId: 'Tomcat_credentials')], contextPath: '/', war: '**/*.war'
+                deploy adapters: [tomcat8(url: 'http://13.201.89.207:8080/'], contextPath: '/', war: '**/*.war'
                 echo 'Deployment Done successfully'
             }
         }
