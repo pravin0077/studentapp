@@ -22,10 +22,9 @@ stage('testing') {
                 echo 'Testing done'
             }
         }
-stage('Deployment') {
+stage('Deploy') {
             steps {
-                deploy adapters: [tomcat8(url: 'http://13.201.89.207:8080/'], contextPath: '/', war: '**/*.war'
-                echo 'Deployment Done successfully'
+                echo 'Deploy done'
             }
         }
     }
