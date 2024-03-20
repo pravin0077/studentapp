@@ -5,7 +5,7 @@ pipeline {
 
         stage('Pull') {
             steps {
-                git 'https://github.com/chetansomkuwar254/studentapp.ui.git'
+                git 'https://github.com/chetansomkuwar254/studentapp.ui.gitt'
                 echo 'Hello World'
             }
         }
