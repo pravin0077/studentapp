@@ -1,11 +1,11 @@
-pppipeline {
+pipeline {
     agent any
 
     stages {
 
         stage('Pull') {
             steps {
-                git 'https://github.com/chetansomkuwar254/studentapp.ui.git'
+                git 'https://github.com/chetansomkuwar254/studentapp.ui.gittt'
                 echo 'Hello World'
             }
         }
